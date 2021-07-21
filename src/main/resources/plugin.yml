@@ -1,0 +1,41 @@
+name: MWWorldBorder
+main: io.github.jaronz.mwworldborder.MWWorldBorder
+version: "1.0.0"
+api: ["1.0.0"]
+
+author: JaronZ
+description: Plugin to set a world border per world
+permissions:
+  mwworldborder.*:
+    description: "Gives all mwworldborder permissions"
+    default: op
+    children:
+      mwworldborder.command.*: true
+      mwworldborder.ignore: true
+  mwworldborder.ignore:
+    description: "Allows players to travel past the world border"
+    default: op
+  mwworldborder.command.*:
+    description: "Allows usage of all mwworldborder commands"
+    default: op
+    children:
+      mwworldborder.command.set: true
+      mwworldborder.command.get: true
+      mwworldborder.command.remove: true
+      mwworldborder.command.list: true
+      mwworldborder.command.clear: true
+  mwworldborder.command.set:
+    description: "Allows usage of the /setborder command"
+    default: op
+  mwworldborder.command.get:
+    description: "Allows usage of the /getborder command"
+    default: op
+  mwworldborder.command.remove:
+    description: "Allows usage of the /removeborder command"
+    default: op
+  mwworldborder.command.list:
+    description: "Allows usage of the /listborders command"
+    default: op
+  mwworldborder.command.clear:
+    description: "Allows usage of the /clearborders command"
+    default: op

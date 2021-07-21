@@ -1,0 +1,30 @@
+# Config version, do not edit this!
+version: 1
+
+# Use § for colors
+# The message to send when someone is at the border
+message: "§cYou have reached the border of this world!"
+# The message to send when someone teleports outside the border
+messageTp: "§cYou can not teleport outside of the world border!"
+# The message to send when a block gets broken outside of the border
+messageBlockBreak: "§cYou can not break blocks outside of the world border!"
+# The message to send when a block gets placed outside of the border
+messageBlockPlace: "§cYou can not place blocks outside of the world border!"
+
+# If the player should be teleported to the spawn when going outside the world border
+teleportToSpawn: false
+# If vehicle movement should be checked
+checkVehicleMovement: true
+# If blocks outside of the world border can be broken
+blocksBreakable: false
+# If blocks can be placed outside of the world border
+blocksPlaceable: false
+
+# World borders
+borders:
+  exampleWorld:
+    x: 5.0
+    z: 4.0
+  exampleWorld2:
+    x: 3.5
+    z: 1.0
